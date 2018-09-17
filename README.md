@@ -16,9 +16,11 @@ I am an avid fishing :fishing_pole_and_fish: enthusiast and I spend most of my s
 
 
 
-![alt text](https://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj4oPmQ_cLdAhXl0FQKHWexBGEQjRx6BAgBEAU&url=http%3A%2F%2Fwww.sccp.ca%2Fspecies-habitat%2Fsalish-sucker&psig=AOvVaw3KJgNptUqXa4c_kRGlw2m1&ust=1537305960546973)
+![alt text](https://www.google.ca/urlsa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj4oPmQ_cLdAhXl0FQKHWexBGEQjRx6BAgBEAU&url=http%3A%2F%2Fwww.sccp.ca%2Fspecies-habitat%2Fsalish-sucker&psig=AOvVaw3KJgNptUqXa4c_kRGlw2m1&ust=1537305960546973 "Salish Sucker")
 
 
 
 
 
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
