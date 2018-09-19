@@ -1,0 +1,91 @@
+---
+title: "KZ_HW_001"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown Exploration!!
+
+Hello! Welcome to my first homework assignment. In this assignment I will be exploring the **gapminder** dataset (wahoo) 
+
+Before we begin... if you have any questions about the functions you can use the help funciton. For example if we are wondering what the **install.packages** function does, we add a question mark to the front of the function and run it through the console. Here is an example:
+
+```{r}
+?install.packages
+```
+
+Our first step is to install the gapminder package using the **install.packages("gapminder")** function. I will not include it below as this is a function that you only want to run in your console once, rather than multiple times in your markdown document. You may also want to run an install for the **tidyverse** package in your console. It is a set of packages that may make your life easier in the future if you decide to make your analysis more complex
+
+The next thing we do is load the gapminder dataset. To accomplish this we use the **library** function. We will also load the **tidyverse** package that we just downloaded
+
+```{r}
+library(gapminder)
+library(tidyverse)
+```
+
+To get a summary of the dataset we use the **summary** function
+
+```{r}
+summary(gapminder)
+```
+
+If you only want a preview of the first bit of the data set you can use the **head** function
+
+```{r}
+head(gapminder)
+```
+
+The **ncol** function tells you how many columns are present while the **nrow** function tells you how many rows are present in your dataset
+
+```{r}
+ncol(gapminder)
+nrow(gapminder)
+```
+
+Now we will dig deeper. 
+
+If you only want to see a certain part of the dataset you can use the **select** function. For example if you only want to see the life expectancy per country you will do this
+
+```{r}
+select(gapminder, country, lifeExp)
+```
+
+If we decide that we want to rename a variable in the dataset (say there is a mistake or a repeat) we can use the **rename** function
+
+```{r}
+rename(gapminder, AgeOfDeath=lifeExp)
+```
+
+That is a little dark but we will go with it
+
+If we want to order the dataset in a certain way we can use the **arrange** function. This will order the data by population
+
+```{r}
+arrange(gapminder, pop)
+```
+
+If you want this to decrease rather than increase, we use the same function but we make a small tweak
+
+```{r}
+arrange(gapminder, desc(pop))
+```
+
+A big perk of R Markdown is the the ease of statistical applications, I find it quite handy for greating plots. for example I can create a **plot** with R Markdown will spit out a visualization of it instantly
+
+```{r}
+plot(gapminder)
+```
+
+
+If we want to get REALLY crazy we could do something like this
+
+```{r}
+plot(gapminder$lifeExp~gapminder$gdpPercap, cex=0.5, pch=16, col=rgb(0,0,0,0.25))
+```
+
+Thanks for checking out my data exploration. These are the basics and are essential when starting with any data set 
+
+
